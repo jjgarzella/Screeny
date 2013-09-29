@@ -30,11 +30,17 @@
 - (IBAction)updateScreenshot:(UITextField *)sender {
     
     NSDictionary* headers = [NSDictionary dictionaryWithObjectsAndKeys:@"p9qYKW3aCdguDb0wICdEfLEfEwwd8LrA", @"X-Mashape-Authorization", nil];
+    
+    // Appropriate screen size
     NSNumber *heightOfImageView = [NSNumber numberWithFloat:self.view.bounds.size.height*self.view.contentScaleFactor];
     NSNumber *widthOfImageView = [NSNumber numberWithFloat:self.view.bounds.size.width*self.view.contentScaleFactor];
     
-    NSString *startingQueryURL = @"https://shepik-web-screenshot.p.mashape.com/screenshot.php?url=http%3A%2F%2Fgoogle.com%2F%3Fhl%3Den&h=";
-    NSString *queryURL = [NSString stringWithFormat:@"%@%@&w=%@", startingQueryURL, heightOfImageView, widthOfImageView];
+    // User-entered URL
+    NSURL *userEnteredURL =[NSURL URLWithString:sender.text];
+    NSLog(@"%@", userEnteredURL.absoluteString);
+    
+    NSString *startingQueryURL = @"https://shepik-web-screenshot.p.mashape.com/screenshot.php?url=";
+    NSString *queryURL = [NSString stringWithFormat:@"%@%@&h=%@&w=%@", startingQueryURL, userEnteredURL.absoluteString, heightOfImageView, widthOfImageView];
     
     HttpJsonResponse* response = [[Unirest get:^(SimpleRequest* request) {
         [request setUrl:queryURL];
