@@ -30,10 +30,12 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="updateScreenshot:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="MTl-Mr-2A8"/>
+                            </connections>
                         </textField>
                     </navigationItem>
                     <connections>
-                        <outlet property="webAdressTextField" destination="NMH-pz-sCD" id="zjO-a4-rcs"/>
                         <outlet property="webScreenshotImageView" destination="VTO-mc-keR" id="ruq-cS-PBz"/>
                     </connections>
                 </viewController>

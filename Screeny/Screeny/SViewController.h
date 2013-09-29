@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Unirest.h"
 
 @interface SViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *webAdressTextField;
 @property (weak, nonatomic) IBOutlet UIImageView *webScreenshotImageView;
+- (IBAction)updateScreenshot:(UITextField *)sender;
 
 @end

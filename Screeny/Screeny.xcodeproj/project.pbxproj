@@ -22,6 +22,19 @@
 		412A221517F7A36B009EFCC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412A21F417F7A36B009EFCC5 /* UIKit.framework */; };
 		412A221D17F7A36B009EFCC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 412A221B17F7A36B009EFCC5 /* InfoPlist.strings */; };
 		412A221F17F7A36B009EFCC5 /* ScreenyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 412A221E17F7A36B009EFCC5 /* ScreenyTests.m */; };
+		419DE18217F7AF7700C68FCF /* HttpClientHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 419DE16617F7AF7700C68FCF /* HttpClientHelper.m */; };
+		419DE18317F7AF7700C68FCF /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 419DE16917F7AF7700C68FCF /* BaseRequest.m */; };
+		419DE18417F7AF7700C68FCF /* BodyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 419DE16B17F7AF7700C68FCF /* BodyRequest.m */; };
+		419DE18517F7AF7700C68FCF /* MultipartRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 419DE16D17F7AF7700C68FCF /* MultipartRequest.m */; };
+		419DE18617F7AF7700C68FCF /* SimpleRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 419DE16F17F7AF7700C68FCF /* SimpleRequest.m */; };
+		419DE18717F7AF7700C68FCF /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 419DE17117F7AF7700C68FCF /* HttpRequest.m */; };
+		419DE18817F7AF7700C68FCF /* HttpRequestWithBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 419DE17317F7AF7700C68FCF /* HttpRequestWithBody.m */; };
+		419DE18917F7AF7700C68FCF /* HttpBinaryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 419DE17617F7AF7700C68FCF /* HttpBinaryResponse.m */; };
+		419DE18A17F7AF7700C68FCF /* HttpJsonResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 419DE17817F7AF7700C68FCF /* HttpJsonResponse.m */; };
+		419DE18B17F7AF7700C68FCF /* HttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 419DE17A17F7AF7700C68FCF /* HttpResponse.m */; };
+		419DE18C17F7AF7700C68FCF /* HttpStringResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 419DE17C17F7AF7700C68FCF /* HttpStringResponse.m */; };
+		419DE18D17F7AF7700C68FCF /* JsonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 419DE17E17F7AF7700C68FCF /* JsonNode.m */; };
+		419DE18E17F7AF7700C68FCF /* Unirest.m in Sources */ = {isa = PBXBuildFile; fileRef = 419DE18117F7AF7700C68FCF /* Unirest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +68,33 @@
 		412A221A17F7A36B009EFCC5 /* ScreenyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScreenyTests-Info.plist"; sourceTree = "<group>"; };
 		412A221C17F7A36B009EFCC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		412A221E17F7A36B009EFCC5 /* ScreenyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenyTests.m; sourceTree = "<group>"; };
+		419DE16517F7AF7700C68FCF /* HttpClientHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClientHelper.h; sourceTree = "<group>"; };
+		419DE16617F7AF7700C68FCF /* HttpClientHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClientHelper.m; sourceTree = "<group>"; };
+		419DE16817F7AF7700C68FCF /* BaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
+		419DE16917F7AF7700C68FCF /* BaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
+		419DE16A17F7AF7700C68FCF /* BodyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyRequest.h; sourceTree = "<group>"; };
+		419DE16B17F7AF7700C68FCF /* BodyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyRequest.m; sourceTree = "<group>"; };
+		419DE16C17F7AF7700C68FCF /* MultipartRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartRequest.h; sourceTree = "<group>"; };
+		419DE16D17F7AF7700C68FCF /* MultipartRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartRequest.m; sourceTree = "<group>"; };
+		419DE16E17F7AF7700C68FCF /* SimpleRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleRequest.h; sourceTree = "<group>"; };
+		419DE16F17F7AF7700C68FCF /* SimpleRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleRequest.m; sourceTree = "<group>"; };
+		419DE17017F7AF7700C68FCF /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		419DE17117F7AF7700C68FCF /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		419DE17217F7AF7700C68FCF /* HttpRequestWithBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestWithBody.h; sourceTree = "<group>"; };
+		419DE17317F7AF7700C68FCF /* HttpRequestWithBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestWithBody.m; sourceTree = "<group>"; };
+		419DE17517F7AF7700C68FCF /* HttpBinaryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpBinaryResponse.h; sourceTree = "<group>"; };
+		419DE17617F7AF7700C68FCF /* HttpBinaryResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpBinaryResponse.m; sourceTree = "<group>"; };
+		419DE17717F7AF7700C68FCF /* HttpJsonResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpJsonResponse.h; sourceTree = "<group>"; };
+		419DE17817F7AF7700C68FCF /* HttpJsonResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpJsonResponse.m; sourceTree = "<group>"; };
+		419DE17917F7AF7700C68FCF /* HttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpResponse.h; sourceTree = "<group>"; };
+		419DE17A17F7AF7700C68FCF /* HttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpResponse.m; sourceTree = "<group>"; };
+		419DE17B17F7AF7700C68FCF /* HttpStringResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpStringResponse.h; sourceTree = "<group>"; };
+		419DE17C17F7AF7700C68FCF /* HttpStringResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpStringResponse.m; sourceTree = "<group>"; };
+		419DE17D17F7AF7700C68FCF /* JsonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonNode.h; sourceTree = "<group>"; };
+		419DE17E17F7AF7700C68FCF /* JsonNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonNode.m; sourceTree = "<group>"; };
+		419DE17F17F7AF7700C68FCF /* Unirest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Unirest-Prefix.pch"; sourceTree = "<group>"; };
+		419DE18017F7AF7700C68FCF /* Unirest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unirest.h; sourceTree = "<group>"; };
+		419DE18117F7AF7700C68FCF /* Unirest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Unirest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +169,7 @@
 		412A21F717F7A36B009EFCC5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				419DE16417F7AF7700C68FCF /* Unirest */,
 				412A21F817F7A36B009EFCC5 /* Screeny-Info.plist */,
 				412A21F917F7A36B009EFCC5 /* InfoPlist.strings */,
 				412A21FC17F7A36B009EFCC5 /* main.m */,
@@ -153,6 +194,57 @@
 				412A221B17F7A36B009EFCC5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		419DE16417F7AF7700C68FCF /* Unirest */ = {
+			isa = PBXGroup;
+			children = (
+				419DE16517F7AF7700C68FCF /* HttpClientHelper.h */,
+				419DE16617F7AF7700C68FCF /* HttpClientHelper.m */,
+				419DE16717F7AF7700C68FCF /* HttpRequest */,
+				419DE17017F7AF7700C68FCF /* HttpRequest.h */,
+				419DE17117F7AF7700C68FCF /* HttpRequest.m */,
+				419DE17217F7AF7700C68FCF /* HttpRequestWithBody.h */,
+				419DE17317F7AF7700C68FCF /* HttpRequestWithBody.m */,
+				419DE17417F7AF7700C68FCF /* HttpResponse */,
+				419DE17F17F7AF7700C68FCF /* Unirest-Prefix.pch */,
+				419DE18017F7AF7700C68FCF /* Unirest.h */,
+				419DE18117F7AF7700C68FCF /* Unirest.m */,
+			);
+			name = Unirest;
+			path = "../../../Libraries/unirest-obj-c/Unirest";
+			sourceTree = "<group>";
+		};
+		419DE16717F7AF7700C68FCF /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				419DE16817F7AF7700C68FCF /* BaseRequest.h */,
+				419DE16917F7AF7700C68FCF /* BaseRequest.m */,
+				419DE16A17F7AF7700C68FCF /* BodyRequest.h */,
+				419DE16B17F7AF7700C68FCF /* BodyRequest.m */,
+				419DE16C17F7AF7700C68FCF /* MultipartRequest.h */,
+				419DE16D17F7AF7700C68FCF /* MultipartRequest.m */,
+				419DE16E17F7AF7700C68FCF /* SimpleRequest.h */,
+				419DE16F17F7AF7700C68FCF /* SimpleRequest.m */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		419DE17417F7AF7700C68FCF /* HttpResponse */ = {
+			isa = PBXGroup;
+			children = (
+				419DE17517F7AF7700C68FCF /* HttpBinaryResponse.h */,
+				419DE17617F7AF7700C68FCF /* HttpBinaryResponse.m */,
+				419DE17717F7AF7700C68FCF /* HttpJsonResponse.h */,
+				419DE17817F7AF7700C68FCF /* HttpJsonResponse.m */,
+				419DE17917F7AF7700C68FCF /* HttpResponse.h */,
+				419DE17A17F7AF7700C68FCF /* HttpResponse.m */,
+				419DE17B17F7AF7700C68FCF /* HttpStringResponse.h */,
+				419DE17C17F7AF7700C68FCF /* HttpStringResponse.m */,
+				419DE17D17F7AF7700C68FCF /* JsonNode.h */,
+				419DE17E17F7AF7700C68FCF /* JsonNode.m */,
+			);
+			path = HttpResponse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +346,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				419DE18217F7AF7700C68FCF /* HttpClientHelper.m in Sources */,
+				419DE18817F7AF7700C68FCF /* HttpRequestWithBody.m in Sources */,
+				419DE18717F7AF7700C68FCF /* HttpRequest.m in Sources */,
+				419DE18C17F7AF7700C68FCF /* HttpStringResponse.m in Sources */,
 				412A220117F7A36B009EFCC5 /* SAppDelegate.m in Sources */,
+				419DE18317F7AF7700C68FCF /* BaseRequest.m in Sources */,
+				419DE18417F7AF7700C68FCF /* BodyRequest.m in Sources */,
+				419DE18A17F7AF7700C68FCF /* HttpJsonResponse.m in Sources */,
+				419DE18517F7AF7700C68FCF /* MultipartRequest.m in Sources */,
+				419DE18617F7AF7700C68FCF /* SimpleRequest.m in Sources */,
+				419DE18B17F7AF7700C68FCF /* HttpResponse.m in Sources */,
+				419DE18D17F7AF7700C68FCF /* JsonNode.m in Sources */,
 				412A220A17F7A36B009EFCC5 /* SViewController.m in Sources */,
 				412A21FD17F7A36B009EFCC5 /* main.m in Sources */,
+				419DE18E17F7AF7700C68FCF /* Unirest.m in Sources */,
+				419DE18917F7AF7700C68FCF /* HttpBinaryResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +580,7 @@
 				412A222417F7A36B009EFCC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		412A222517F7A36B009EFCC5 /* Build configuration list for PBXNativeTarget "ScreenyTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +589,7 @@
 				412A222717F7A36B009EFCC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
