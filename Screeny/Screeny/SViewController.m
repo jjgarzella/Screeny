@@ -42,25 +42,26 @@
     NSString *startingQueryURL = @"https://shepik-web-screenshot.p.mashape.com/screenshot.php?url=";
     NSString *queryURL = [NSString stringWithFormat:@"%@%@&h=%@&w=%@", startingQueryURL, userEnteredURL.absoluteString, heightOfImageView, widthOfImageView];
     
-    HttpJsonResponse* response = [[Unirest get:^(SimpleRequest* request) {
+    [[Unirest get:^(SimpleRequest* request) {
         [request setUrl:queryURL];
         [request setHeaders:headers];
-    }] asJson];
+    }] asJsonAsync:^(HttpJsonResponse* response) {
+        if (![response.body isArray]) {
+            
+            NSDictionary *responseDictionary = response.body.JSONObject;
+            NSLog(@"%@", responseDictionary);
+            
+            NSURL *screenshotURL = [NSURL URLWithString:responseDictionary[@"image"]];
+            
+            NSData *screenshotData = [NSData dataWithContentsOfURL:screenshotURL];
+            
+            UIImage *screenshot = [UIImage imageWithData:screenshotData];
+            
+            self.webScreenshotImageView.image = screenshot;
+            
+        }
+    }];
     
-    if (![response.body isArray]) {
-        
-        NSDictionary *responseDictionary = response.body.JSONObject;
-        NSLog(@"%@", responseDictionary);
-        
-        NSURL *screenshotURL = [NSURL URLWithString:responseDictionary[@"image"]];
-        
-        NSData *screenshotData = [NSData dataWithContentsOfURL:screenshotURL];
-        
-        UIImage *screenshot = [UIImage imageWithData:screenshotData];
-        
-        self.webScreenshotImageView.image = screenshot;
-        
-    }
 }
 
 #pragma mark - Text Field Delegate
