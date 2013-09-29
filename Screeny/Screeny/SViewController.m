@@ -8,7 +8,7 @@
 
 #import "SViewController.h"
 
-@interface SViewController ()
+@interface SViewController ()  <UITextFieldDelegate>
 
 @end
 
@@ -26,11 +26,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 - (IBAction)updateScreenshot:(UITextField *)sender {
     
     NSDictionary* headers = [NSDictionary dictionaryWithObjectsAndKeys:@"p9qYKW3aCdguDb0wICdEfLEfEwwd8LrA", @"X-Mashape-Authorization", nil];
-    NSNumber *heightOfImageView = [NSNumber numberWithFloat:self.webScreenshotImageView.bounds.size.height];
-    NSNumber *widthOfImageView = [NSNumber numberWithFloat:self.webScreenshotImageView.bounds.size.width];
+    NSNumber *heightOfImageView = [NSNumber numberWithFloat:self.view.bounds.size.height*self.view.contentScaleFactor];
+    NSNumber *widthOfImageView = [NSNumber numberWithFloat:self.view.bounds.size.width*self.view.contentScaleFactor];
     
     NSString *startingQueryURL = @"https://shepik-web-screenshot.p.mashape.com/screenshot.php?url=http%3A%2F%2Fgoogle.com%2F%3Fhl%3Den&h=";
     NSString *queryURL = [NSString stringWithFormat:@"%@%@&w=%@", startingQueryURL, heightOfImageView, widthOfImageView];
@@ -54,5 +55,13 @@
         self.webScreenshotImageView.image = screenshot;
         
     }
+}
+
+#pragma mark - Text Field Delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 @end

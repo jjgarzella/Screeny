@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VTO-mc-keR">
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VTO-mc-keR">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -32,6 +32,7 @@
                             <textInputTraits key="textInputTraits"/>
                             <connections>
                                 <action selector="updateScreenshot:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="MTl-Mr-2A8"/>
+                                <outlet property="delegate" destination="vXZ-lx-hvc" id="5lO-uD-4ti"/>
                             </connections>
                         </textField>
                     </navigationItem>
