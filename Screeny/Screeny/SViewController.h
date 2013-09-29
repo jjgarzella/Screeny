@@ -10,4 +10,7 @@
 
 @interface SViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *webAdressTextField;
+@property (weak, nonatomic) IBOutlet UIImageView *webScreenshotImageView;
+
 @end
